@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48D62CB27F3084D00F07C57 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D62CA27F3084D00F07C57 /* NoteViewController.swift */; };
+		D48D62CD27F308A800F07C57 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D62CC27F308A800F07C57 /* EntryViewController.swift */; };
 		D4E34B6D27F2FC3B0080E950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B6C27F2FC3B0080E950 /* AppDelegate.swift */; };
 		D4E34B6F27F2FC3B0080E950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B6E27F2FC3B0080E950 /* SceneDelegate.swift */; };
 		D4E34B7127F2FC3B0080E950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B7027F2FC3B0080E950 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D48D62CA27F3084D00F07C57 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		D48D62CC27F308A800F07C57 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		D4E34B6927F2FC3B0080E950 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E34B6C27F2FC3B0080E950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E34B6E27F2FC3B0080E950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				D4E34B7027F2FC3B0080E950 /* ViewController.swift */,
+				D48D62CA27F3084D00F07C57 /* NoteViewController.swift */,
+				D48D62CC27F308A800F07C57 /* EntryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48D62CB27F3084D00F07C57 /* NoteViewController.swift in Sources */,
+				D48D62CD27F308A800F07C57 /* EntryViewController.swift in Sources */,
 				D4E34B7127F2FC3B0080E950 /* ViewController.swift in Sources */,
 				D4E34B6D27F2FC3B0080E950 /* AppDelegate.swift in Sources */,
 				D4E34B6F27F2FC3B0080E950 /* SceneDelegate.swift in Sources */,
