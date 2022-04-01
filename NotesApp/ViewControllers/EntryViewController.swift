@@ -18,7 +18,7 @@ class EntryViewController: UIViewController {
         super.viewDidLoad()
         titleField.becomeFirstResponder()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSave))
-
+        
     }
     
     @objc func didTapSave() {
@@ -26,5 +26,4 @@ class EntryViewController: UIViewController {
             completion?(text, noteField.text)
         }
     }
-    
 }

@@ -14,7 +14,7 @@ class NoteViewController: UIViewController {
     
     public var noteTitle: String = ""
     public var note: String = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = noteTitle

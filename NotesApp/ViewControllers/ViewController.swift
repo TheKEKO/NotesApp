@@ -13,10 +13,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var label: UILabel!
     
     var models: [(title: String, note: String)] = []
-     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        table.backgroundView = UIImageView(image: #imageLiteral(resourceName: "123"))
         table.delegate = self
         table.dataSource = self
         title = "Notes"
@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         else {
             return
         }
+        
         vc.title = "New Note"
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.completion = { noteTitle, note in
@@ -36,6 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.table.isHidden = false
             self.table.reloadData()
         }
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -56,8 +58,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let model = models[indexPath.row]
         
         guard let vc = storyboard?.instantiateViewController(identifier: "note") as? NoteViewController else {
-           return
+            return
         }
+        
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.title = "Note"
         vc.noteTitle = model.title
