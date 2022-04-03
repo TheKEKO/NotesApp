@@ -16,7 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.backgroundView = UIImageView(image: #imageLiteral(resourceName: "123"))
+//        table.backgroundView = UIImageView(image: #imageLiteral(resourceName: "123"))
+//        view.backgroundColor = .init(named: "123")
+//        view.backgroundColor = .init(patternImage: "123")
         table.delegate = self
         table.dataSource = self
         title = "Notes"
